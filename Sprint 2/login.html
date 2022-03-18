@@ -1,0 +1,88 @@
+<!-- thẻ bắt buộc phải có khi bắt đầu html -->
+<!DOCTYPE HTML> 
+<html>
+<!-- cặp thẻ head với title là tên website -->	
+<head>
+<title>Website Ticket | Login :: w3layouts</title>
+<!-- meta về cơ bản metadata là một thẻ HTML cung cấp thông tin về dữ liệu.
+Ví dụ trong http-equiv="Content-Type", 
+http-equiv là tên khóa và "Content-Type"là giá trị, giống với charset="utf-8".
+
+- UTF-8 là một mã hóa ký tự có độ rộng thay đổi có khả năng mã hóa tất cả 1.112.064 
+điểm mã hợp lệ trong Unicode bằng cách sử dụng một đến bốn byte 8 bit.
+- Thuộc tính http-equiv cung cấp tiêu đề HTTP cho thông tin / giá trị của thuộc tính
+ nội dung.
+- Content-type chỉ định mã hóa ký tự cho tài liệu-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- thẻ <link>
+- rel - xác định mối quan hệ giữa tài liệu được liên kết và tài liệu hiện tại.
+ Chỉ sử dụng thuộc tính rel khi có thuộc tính href 
+- type - xác định nội dung của tệp hoặc tài liệu được liên kết giữa 
+các thẻ <style> và </style> . 
+Nó có một text hoặc css làm giá trị mặc định.
+- href - chỉ định vị trí của tệp CSS muốn liên kết với HTML.
+- media - mô tả loại phương tiện mà các kiểu CSS được tối ưu hóa. 
+Trân đặt all làm giá trị thuộc tính để ngụ ý
+việc sử dụng nó cho tất cả các phương tiện. -->
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+	<!-- Thuộc tính class có thể sử dụng 
+		trong thẻ <div> để lên các khối giao diện giống nhau:-->
+    <div class="header-top">
+			  <div class="header-top-right">
+			 <div class="cssmenu">
+<!-- Giải thích từ viết tắt: ul là viết tắt của từ tiếng Anh unordered list
+	 (nghĩa là không có thứ tự), li là viết tắt của list, còn ol là viết tắt
+	  của ordered list (nghĩa là có thứ tự).-->
+				<ul>
+					<li><a href="index.html">Thoát</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+	 </div>
+     <div class="clear"></div>
+     </div>
+	</div>
+        <div class="login">
+          	<div class="wrap">
+				<div class="col_1_of_login span_1_of_login">
+					<h4 class="title">ĐĂNG KÍ THÀNH VIÊN</h4>
+					<p>1. Thành viên cần phải đăng kí thông tin một cách chính xác, họ tên phải được viết hoa kí tự đầu và có dấu rõ ràng. Ví dụ Đặng Ngọc Trân, tên truy cập chỉ được chấp nhận kí tự, _ và số, ví dụ: ngoctran_10, các tên truy cập chứa kí tự lạ sẽ bị ban quan trị xóa nick ngay lập tức. Kính mong thành viên chấp hành đúng để có thể sinh hoạt trên website 1 cách nghiêm túc và chuyên nghiệp.</p>
+					<p>2. Sau khi điền đầy đủ các thông tin chính xác, các bạn nhấp vào nút Đăng kí, sau khi hệ thống duyệt đơn đăng kí của bạn sẽ gởi đến bạn 1 email kích hoạt tài khoản.</p>
+					<div class="button1">
+						<input type="submit" name="Submit" value="Đăng kí tại đây"><div class="clear"></div>
+					 </div>
+					 <div class="clear"></div>
+				</div>
+				<div class="col_1_of_login span_1_of_login">
+				<div class="login-title">
+	           		<h4 class="title">ĐĂNG NHẬP VÀO HỆ THỐNG</h4>
+					<div id="loginbox" class="loginbox">
+						<form action="" method="post" name="login
+						" id="login-form">
+						<!--fieldset Nhóm các phần tử có liên quan trong một biểu mẫu:-->
+						  <fieldset class="input">
+						    <p id="login-form-username">
+						      <label for="modlgn_username">Mã số sinh viên</label>
+						      <input id="modlgn_username" type="text" name="email" class="inputbox" size="18" autocomplete="off">
+						    </p>
+						    <p id="login-form-password">
+						      <label for="modlgn_passwd">Mật khẩu</label>
+						      <input id="modlgn_passwd" type="password" name="password" class="inputbox" size="18" autocomplete="off">
+						    </p>
+						    <div class="remember">
+							    <input type="submit" name="Submit" class="button" value="Đăng nhập"><div class="clear"></div>
+							 </div>
+						  </fieldset>
+						 </form>
+					</div>
+			    </div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+</body>
+</html>
