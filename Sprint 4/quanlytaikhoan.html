@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Ticket | Thông tin tài khoản</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/form.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery1.min.js"></script>
+    <!-- start menu -->
+    <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="js/megamenu.js"></script>
+    <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+    <!--start slider -->
+        <link rel="stylesheet" href="css/fwslider.css" media="all">
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/css3-mediaqueries.js"></script>
+        <script src="js/fwslider.js"></script>
+    <!--end slider -->
+    <script src="js/jquery.easydropdown.js"></script>
+</head>
+<body>
+<!-- Phần đầu -->
+    <div class="header-top">
+		<div class="wrap"> 
+			</div>
+			<div class="cssmenu">
+				<ul>
+				     <li><a href="index.html">Quay lại trang chủ</a></li>
+				</ul>
+			</div>
+		<div class="clear"></div>
+	</div>
+    </div>
+
+<!-- phần thêm/sửa/xóa -->
+    </div>
+	<div class="quanly">    
+  		<div class="main">
+     		<div class="wrap">
+				<div class="cont span_1_of_1">
+		</div>
+		<!-- <div class="desc1 span_1_of_1"> -->
+			<h2 class="head">HỒ SƠ SINH VIÊN</h2>
+            <input type="hidden" id="id" />  
+            <b>Họ:</b><input type="text" id="fname" /><br />  
+            <b>Tên:</b><input type="text" id="lname" /><br />
+            <b>Giới tính:</b><input type="text" id="gender" /><br />
+            <b>Lớp:</b><input type="text" id="class" /><br />
+            <b>Mã sinh viên:</b><input type="text" id="msv" /><br />    
+            <b>Ngày sinh:</b><input type="text" id="ngaysinh" /><br />      
+            <b>Địa chỉ:</b><input type="text" id="city" /><br />  
+            <b>Số điện thoại:</b><input type="text" id="dienthoai" /><br />  
+            <b>Email:</b><input type="text" id="email" /><br />  
+            <button onclick="InsertData()">Thêm</button>  
+            <button onclick="UpdateData()">Sửa</button>  
+            <button onclick="ClearData()">Xóa</button>  
+            <br />  
+            <br />  
+            <br />  
+            <div id="details"></div> 
+		<div class="clear"></div>
+	  <div class="clear"></div>	
+	</div>
+	</div>
+    <!-- <div> 
+        <div class="desc1 span_1_of_1"></div> 
+        <h2 class="head">HỒ SƠ CÁ NHÂN</h2>  
+        <input type="hidden" id="id" />  
+        <b>First name:</b><input type="text" id="firstName" /><br />  
+        <b>Last name:</b><input type="text" id="lastName" /><br />  
+        <b>City:</b><input type="text" id="city" /><br />  
+        <b>State:</b><input type="text" id="state" /><br />  
+        <b>Phone:</b>  
+        <input type="text" id="phone" /><br />  
+        <b>Email:</b><input type="text" id="email" /><br />  
+        <button onclick="InsertData()">Insert Data</button>  
+        <button onclick="UpdateData()">Update Data</button>  
+        <button onclick="ClearData()">Clear</button>  
+        <br />  
+        <br />  
+        <br />  
+        <div id="details"></div>  
+    </div>
+    <div class="clear"></div> -->
+
+<!-- Phần cuối -->
+    <div>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="wrap">
+                  <div class="section group example">
+                    <div class="col_1_of_2 span_1_of_2">
+                        <ul class="f-list">
+                          <li><img src="images/3.png"><span class="f-text">LIÊN HỆ VỚI CHÚNG TÔI KHI BẠN CẦN </span>
+                            <div class="clear">
+                            </div>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+            </div>
+        <!-- Phần fb, liên hệ -->
+            <div class="footer-middle">
+                <div class="wrap">
+                <div class="section group example">
+                  <div class="col_1_of_f_1 span_1_of_f_1">
+                     <div class="section group example">
+                       <div class="col_1_of_f_2 span_1_of_f_2">
+                          <h3>Facebook</h3>
+                            <script>(function(d, s, id) {
+                              var js, fjs = d.getElementsByTagName(s)[0];
+                              if (d.getElementById(id)) return;
+                              js = d.createElement(s); js.id = id;
+                              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                              fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
+                            <div class="like_box">	
+                                <div class="fb-like-box" data-href="https://www.facebook.com/hotrosinhviendhkt" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+                            </div>
+                       </div>
+                     <div class="col_1_of_f_2 span_1_of_f_2">
+                       <h3>Liên hệ</h3>
+                            <div class="company_address">
+                                <p>Địa chỉ: 71 Ngũ Hành Sơn, Đà Nẵng, Việt Nam</p>
+                                <p>Số điện thoại: 0236 3953 773</p>
+                                <p>Email: <span>hotrosinhvien@due.edu.vn</span></p>					   		
+                           </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+               </div>
+              <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+        <!-- phần cuối cùng -->
+            <div class="footer-bottom">
+                <div class="wrap">
+                     <div class="copy">
+                        <p>© 2022 |<a href="#" target="_blank"> Website Ticket</a></p>
+                     </div>
+                <div class="clear"></div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
